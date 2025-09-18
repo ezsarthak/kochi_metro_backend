@@ -1114,4 +1114,5 @@ if __name__ == '__main__':
     print("📊 API Server: http://localhost:5000")
     print("📚 API Documentation: http://localhost:5000/docs")
     print("📋 API JSON Schema: http://localhost:5000/docs/json")
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(debug=True, host='0.0.0.0', port=port)
