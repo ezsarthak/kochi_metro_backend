@@ -12,7 +12,7 @@ import traceback
 
 # Import our custom modules
 from priority_model import main_advanced_pipeline
-from schedule_engine import TrainScheduler, load_trips, validate_schedule, HUB_STOPS, STATION_ORDER
+from schedule_engine import TrainScheduler, load_trips, validate_schedule, HUB_STOPS, STATION_ORDER, NUM_TRAINS
 from utils import generate_mock_data, calculate_performance_metrics, create_what_if_simulation
 
 # Configure logging
@@ -258,6 +258,14 @@ def generate_schedule():
         data = request.get_json()
         available_slots = data.get('available_slots', 4)
         
+        raw_available_trains = data.get('available_trains', NUM_TRAINS)
+        try:
+            available_trains = int(raw_available_trains)
+            if available_trains <= 0:
+                available_trains = NUM_TRAINS
+        except (TypeError, ValueError):
+            available_trains = NUM_TRAINS
+        
         if not current_priority_data:
             logger.info("No priority data available, running priority analysis first...")
             backend_file = app.config['BACKEND_EXCEL_FILE']
@@ -275,22 +283,40 @@ def generate_schedule():
             else:
                 return jsonify({'error': 'Failed to run priority analysis required for schedule generation'}), 500
         
+        try:
+            slots_to_use = min(int(available_slots), int(available_trains))
+        except Exception:
+            slots_to_use = min(4, int(available_trains))
+
         maintenance_trains = []
         if current_priority_data:
             priority_trains = current_priority_data.get('train_priorities', [])
             sorted_trains = sorted(priority_trains, key=lambda x: x['priority_rank'], reverse=True)
-            maintenance_trains = [f"Train_{t['train_id']}" for t in sorted_trains[:available_slots]]
-            logger.info(f"Selected worst-ranked trains for maintenance: {maintenance_trains}")
+            
+            filtered = []
+            for t in sorted_trains:
+                try:
+                    tid = int(t['train_id'])
+                except Exception:
+                    # fall back if stored as "Train_7"
+                    tid = int(str(t['train_id']).replace('Train_', ''))
+                if tid <= available_trains:
+                    filtered.append(t)
+
+            maintenance_trains = [f"Train_{t['train_id']}" if isinstance(t['train_id'], int) else f"Train_{int(str(t['train_id']).replace('Train_', ''))}" for t in filtered[:slots_to_use]]
+            logger.info(f"Selected worst-ranked trains for maintenance (filtered to {available_trains} trains): {maintenance_trains}")
         else:
-            # This should never happen now, but keeping as fallback
-            maintenance_trains = [f"Train_{i}" for i in range(25, 25-available_slots, -1)]
+            # Generates e.g. Train_20, Train_19, ... based on slots_to_use
+            start = available_trains
+            stop = max(available_trains - slots_to_use, 0)
+            maintenance_trains = [f"Train_{i}" for i in range(start, stop, -1)]
             logger.warning("No priority data available, using fallback train selection")
         
-        logger.info(f"Generating schedule with {available_slots} available maintenance slots")
+        logger.info(f"Generating schedule with {slots_to_use} available maintenance slots (requested={available_slots}) and {available_trains} available trains")
         
         scheduler = TrainScheduler(
             trips=current_trips_data,
-            num_trains=25,
+            num_trains=available_trains,
             maintenance_trains=set(maintenance_trains),
             hub_stops=HUB_STOPS,
             station_order=STATION_ORDER
@@ -306,7 +332,7 @@ def generate_schedule():
             schedule_data = {
                 'schedule': schedule,
                 'maintenance_trains': maintenance_trains,
-                'available_slots': available_slots,
+                'available_slots': slots_to_use,  # reflect the clamped slots actually used
                 'selection_method': 'worst_priority_rank' if current_priority_data else 'fallback',
                 'validation': {
                     'is_valid': is_valid,
@@ -317,6 +343,7 @@ def generate_schedule():
                     'total_trains': len(schedule),
                     'maintenance_slots_used': len(maintenance_trains),
                     'available_slots_requested': available_slots,
+                    'available_trains': available_trains,
                     'total_trips': sum(len(trips) for trips in schedule.values()),
                     'priority_data_used': current_priority_data is not None,
                     'auto_analysis_run': True  # Track if analysis was auto-run
@@ -1114,5 +1141,4 @@ if __name__ == '__main__':
     print("📊 API Server: http://localhost:5000")
     print("📚 API Documentation: http://localhost:5000/docs")
     print("📋 API JSON Schema: http://localhost:5000/docs/json")
-    port = int(os.environ.get("PORT", 5000))
-    app.run(debug=True, host='0.0.0.0', port=port)
+    app.run(debug=True, host='0.0.0.0', port=5000)

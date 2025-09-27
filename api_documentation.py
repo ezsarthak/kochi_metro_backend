@@ -115,8 +115,8 @@ def generate_api_docs():
             },
             "/api/schedule/generate": {
                 "post": {
-                    "summary": "Generate Train Schedule with Available Slots",
-                    "description": "Generate optimized train schedule by selecting worst-ranked trains for available maintenance slots",
+                    "summary": "Generate Train Schedule with Available Slots and Trains",
+                    "description": "Generate optimized train schedule by selecting worst-ranked trains for available maintenance slots. You can also specify available_trains (defaults to 25) to control how many trains are considered by the scheduler.",
                     "requestBody": {
                         "content": {
                             "application/json": {
@@ -128,6 +128,12 @@ def generate_api_docs():
                                             "description": "Number of available maintenance slots",
                                             "default": 4,
                                             "example": 6
+                                        },
+                                        "available_trains": {
+                                            "type": "integer",
+                                            "description": "Total number of trains to consider when generating the schedule (passed to scheduler as num_trains). Defaults to 25.",
+                                            "default": 25,
+                                            "example": 20
                                         }
                                     }
                                 }
@@ -156,7 +162,8 @@ def generate_api_docs():
                                     },
                                     "metadata": {
                                         "maintenance_slots_used": 4,
-                                        "available_slots_requested": 4
+                                        "available_slots_requested": 4,
+                                        "available_trains": 20
                                     }
                                 }
                             }
