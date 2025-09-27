@@ -1,7 +1,7 @@
 {
   "analysis_metadata": {
-    "timestamp": "2025-09-27T15:45:39.528798",
-    "processing_time_seconds": 2.989743,
+    "timestamp": "2025-09-27T16:21:26.181288",
+    "processing_time_seconds": 2.174801,
     "file_processed": "data/Final kochi 1.xlsx",
     "total_trains": 25,
     "total_sheets_processed": 6,
@@ -626,8 +626,8 @@
       "Fitness": {},
       "Job card": {
         "critical": [
-          "Non critical jobs",
-          "Critical jobs"
+          "Critical jobs",
+          "Non critical jobs"
         ],
         "noncritical": [
           "Non critical jobs"

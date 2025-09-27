@@ -14,6 +14,7 @@ import traceback
 from priority_model import main_advanced_pipeline
 from schedule_engine import TrainScheduler, load_trips, validate_schedule, HUB_STOPS, STATION_ORDER, NUM_TRAINS
 from utils import generate_mock_data, calculate_performance_metrics, create_what_if_simulation
+from cache_utils import LastResultCache, payload_hash
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -21,6 +22,8 @@ logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
 CORS(app)
+
+schedule_cache = LastResultCache()
 
 # Configuration
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16MB max file size
@@ -256,6 +259,24 @@ def generate_schedule():
     
     try:
         data = request.get_json()
+
+        try:
+            req_hash = payload_hash(data or {})
+            cached_blob = schedule_cache.load()
+            if cached_blob and cached_blob.get("hash") == req_hash:
+                cached_resp = cached_blob.get("response")
+                if isinstance(cached_resp, dict):
+                    # keep current state in sync for subsequent "current" endpoints
+                    try:
+                        current_schedule_data = cached_resp.get("data", current_schedule_data)
+                    except Exception:
+                        pass
+                    cached_resp["timestamp"] = datetime.now().isoformat()
+                    logger.info("Cache hit for /api/schedule/generate")
+                    return jsonify(cached_resp)
+        except Exception as _cache_err:
+            logger.warning(f"Schedule cache check failed: {_cache_err}")
+
         available_slots = data.get('available_slots', 4)
         
         raw_available_trains = data.get('available_trains', NUM_TRAINS)
@@ -352,12 +373,18 @@ def generate_schedule():
             
             current_schedule_data = schedule_data
             
-            return jsonify({
+            response_payload = {
                 'status': 'success',
                 'message': f'Schedule generated successfully with {len(maintenance_trains)} worst-ranked trains selected for maintenance',
                 'data': schedule_data,
                 'timestamp': datetime.now().isoformat()
-            })
+            }
+            try:
+                schedule_cache.save(req_hash, response_payload)
+            except Exception as _cache_err:
+                logger.warning(f"Schedule cache save failed: {_cache_err}")
+
+            return jsonify(response_payload)
         else:
             return jsonify({'error': 'Failed to generate feasible schedule'}), 500
             
