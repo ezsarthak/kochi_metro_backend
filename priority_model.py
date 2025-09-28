@@ -344,22 +344,24 @@ def generate_comprehensive_json_output(combined_df, original_data, validator, fe
                 train_info["scores_by_sheet"][sheet] = float(row[sheet])
         
         # Add original data if available
-        if idx < len(original_data):
-            train_info["original_data"] = {}
-            for sheet_name, sheet_df in original_data.items():
-                if idx < len(sheet_df):
-                    # Convert all values to JSON-serializable format
-                    train_info["original_data"][sheet_name] = {}
-                    for col, val in sheet_df.iloc[idx].items():
-                        if pd.isna(val):
-                            train_info["original_data"][sheet_name][str(col)] = None
-                        elif isinstance(val, (np.integer, int)):
-                            train_info["original_data"][sheet_name][str(col)] = int(val)
-                        elif isinstance(val, (np.floating, float)):
-                            train_info["original_data"][sheet_name][str(col)] = float(val)
-                        else:
-                            train_info["original_data"][sheet_name][str(col)] = str(val)
+        train_info["original_data"] = {}
+        for sheet_name, sheet_df in original_data.items():
+            if int(idx) < len(sheet_df):
+                train_info["original_data"][sheet_name] = {}
+                for col, val in sheet_df.iloc[int(idx)].items():
+                    if pd.isna(val):
+                        train_info["original_data"][sheet_name][str(col)] = None
+                    elif isinstance(val, (np.integer, int)):
+                        train_info["original_data"][sheet_name][str(col)] = int(val)
+                    elif isinstance(val, (np.floating, float)):
+                        train_info["original_data"][sheet_name][str(col)] = float(val)
+                    else:
+                        train_info["original_data"][sheet_name][str(col)] = str(val)
         
+        # If no original rows were available in any sheet for this train, drop the empty key
+        if not train_info["original_data"]:
+            del train_info["original_data"]
+
         train_details.append(train_info)
     
     # Sort by priority rank
@@ -377,7 +379,7 @@ def generate_comprehensive_json_output(combined_df, original_data, validator, fe
         "analysis_metadata": {
             "timestamp": datetime.now().isoformat(),
             "processing_time_seconds": processing_time,
-            "file_processed": "data/Final kochi 1.xlsx",  # You can make this dynamic
+            "file_processed": "Final kochi 1.xlsx",  # You can make this dynamic
             "total_trains": len(combined_df),
             "total_sheets_processed": len(valid_sheets),
             "sheets_processed": valid_sheets

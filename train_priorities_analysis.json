@@ -1,8 +1,8 @@
 {
   "analysis_metadata": {
-    "timestamp": "2025-09-27T16:21:26.181288",
-    "processing_time_seconds": 2.174801,
-    "file_processed": "data/Final kochi 1.xlsx",
+    "timestamp": "2025-09-29T00:11:07.256481",
+    "processing_time_seconds": 2.77203,
+    "file_processed": "Final kochi 1.xlsx",
     "total_trains": 25,
     "total_sheets_processed": 6,
     "sheets_processed": [
@@ -27,6 +27,37 @@
         "Mileage": 0.0,
         "Cleaning": 0.0,
         "Geometry": 0.0
+      },
+      "original_data": {
+        "Fitness": {
+          "Train id": 19,
+          "Days remaining ": 299
+        },
+        "Job card": {
+          "Train id": 19,
+          "Critical jobs": 4,
+          "Non critical jobs": 6
+        },
+        "Branding": {
+          "Train id": 19,
+          "Revenue": 90762,
+          "Remaining hours": 56,
+          "Penelty": 30873
+        },
+        "Mileage": {
+          "Train id": 19,
+          "Total KM": 44974,
+          "Daily Avg run": 166,
+          "Variance": -428
+        },
+        "Cleaning": {
+          "Train id": 19,
+          "Last clean": 46
+        },
+        "Geometry": {
+          "Train id": 19,
+          "Distance": 401
+        }
       }
     },
     {
@@ -86,6 +117,37 @@
         "Mileage": 0.0,
         "Cleaning": 0.0,
         "Geometry": 0.0
+      },
+      "original_data": {
+        "Fitness": {
+          "Train id": 22,
+          "Days remaining ": 216
+        },
+        "Job card": {
+          "Train id": 22,
+          "Critical jobs": 3,
+          "Non critical jobs": 7
+        },
+        "Branding": {
+          "Train id": 22,
+          "Revenue": 48957,
+          "Remaining hours": 422,
+          "Penelty": 39303
+        },
+        "Mileage": {
+          "Train id": 22,
+          "Total KM": 40133,
+          "Daily Avg run": 195,
+          "Variance": 1941
+        },
+        "Cleaning": {
+          "Train id": 22,
+          "Last clean": 45
+        },
+        "Geometry": {
+          "Train id": 22,
+          "Distance": 497
+        }
       }
     },
     {
@@ -100,6 +162,37 @@
         "Mileage": 0.0,
         "Cleaning": 0.0,
         "Geometry": 0.0
+      },
+      "original_data": {
+        "Fitness": {
+          "Train id": 21,
+          "Days remaining ": 228
+        },
+        "Job card": {
+          "Train id": 21,
+          "Critical jobs": 2,
+          "Non critical jobs": 5
+        },
+        "Branding": {
+          "Train id": 21,
+          "Revenue": 93322,
+          "Remaining hours": 404,
+          "Penelty": 27576
+        },
+        "Mileage": {
+          "Train id": 21,
+          "Total KM": 29907,
+          "Daily Avg run": 141,
+          "Variance": 31
+        },
+        "Cleaning": {
+          "Train id": 21,
+          "Last clean": 44
+        },
+        "Geometry": {
+          "Train id": 21,
+          "Distance": 147
+        }
       }
     },
     {
@@ -114,6 +207,37 @@
         "Mileage": 0.0,
         "Cleaning": 0.0,
         "Geometry": 0.0
+      },
+      "original_data": {
+        "Fitness": {
+          "Train id": 10,
+          "Days remaining ": 174
+        },
+        "Job card": {
+          "Train id": 10,
+          "Critical jobs": 1,
+          "Non critical jobs": 7
+        },
+        "Branding": {
+          "Train id": 10,
+          "Revenue": 70953,
+          "Remaining hours": 437,
+          "Penelty": 10049
+        },
+        "Mileage": {
+          "Train id": 10,
+          "Total KM": 98516,
+          "Daily Avg run": 276,
+          "Variance": 625
+        },
+        "Cleaning": {
+          "Train id": 10,
+          "Last clean": 35
+        },
+        "Geometry": {
+          "Train id": 10,
+          "Distance": 67
+        }
       }
     },
     {
@@ -128,6 +252,37 @@
         "Mileage": 0.0,
         "Cleaning": 0.0,
         "Geometry": 0.0
+      },
+      "original_data": {
+        "Fitness": {
+          "Train id": 24,
+          "Days remaining ": 319
+        },
+        "Job card": {
+          "Train id": 24,
+          "Critical jobs": 3,
+          "Non critical jobs": 6
+        },
+        "Branding": {
+          "Train id": 24,
+          "Revenue": 28685,
+          "Remaining hours": 264,
+          "Penelty": 41944
+        },
+        "Mileage": {
+          "Train id": 24,
+          "Total KM": 39863,
+          "Daily Avg run": 269,
+          "Variance": 1908
+        },
+        "Cleaning": {
+          "Train id": 24,
+          "Last clean": 17
+        },
+        "Geometry": {
+          "Train id": 24,
+          "Distance": 146
+        }
       }
     },
     {
@@ -142,6 +297,37 @@
         "Mileage": 0.0,
         "Cleaning": 0.0,
         "Geometry": 0.0
+      },
+      "original_data": {
+        "Fitness": {
+          "Train id": 20,
+          "Days remaining ": 249
+        },
+        "Job card": {
+          "Train id": 20,
+          "Critical jobs": 4,
+          "Non critical jobs": 5
+        },
+        "Branding": {
+          "Train id": 20,
+          "Revenue": 14230,
+          "Remaining hours": 72,
+          "Penelty": 46983
+        },
+        "Mileage": {
+          "Train id": 20,
+          "Total KM": 91537,
+          "Daily Avg run": 380,
+          "Variance": 106
+        },
+        "Cleaning": {
+          "Train id": 20,
+          "Last clean": 43
+        },
+        "Geometry": {
+          "Train id": 20,
+          "Distance": 289
+        }
       }
     },
     {
@@ -156,6 +342,37 @@
         "Mileage": 0.0,
         "Cleaning": 0.0,
         "Geometry": 0.0
+      },
+      "original_data": {
+        "Fitness": {
+          "Train id": 23,
+          "Days remaining ": 264
+        },
+        "Job card": {
+          "Train id": 23,
+          "Critical jobs": 4,
+          "Non critical jobs": 3
+        },
+        "Branding": {
+          "Train id": 23,
+          "Revenue": 52461,
+          "Remaining hours": 322,
+          "Penelty": 38994
+        },
+        "Mileage": {
+          "Train id": 23,
+          "Total KM": 59450,
+          "Daily Avg run": 126,
+          "Variance": 1238
+        },
+        "Cleaning": {
+          "Train id": 23,
+          "Last clean": 45
+        },
+        "Geometry": {
+          "Train id": 23,
+          "Distance": 119
+        }
       }
     },
     {
@@ -170,6 +387,37 @@
         "Mileage": 0.0,
         "Cleaning": 0.0,
         "Geometry": 0.0
+      },
+      "original_data": {
+        "Fitness": {
+          "Train id": 9,
+          "Days remaining ": 331
+        },
+        "Job card": {
+          "Train id": 9,
+          "Critical jobs": 2,
+          "Non critical jobs": 4
+        },
+        "Branding": {
+          "Train id": 9,
+          "Revenue": 84277,
+          "Remaining hours": 250,
+          "Penelty": 9204
+        },
+        "Mileage": {
+          "Train id": 9,
+          "Total KM": 38512,
+          "Daily Avg run": 343,
+          "Variance": 1934
+        },
+        "Cleaning": {
+          "Train id": 9,
+          "Last clean": 52
+        },
+        "Geometry": {
+          "Train id": 9,
+          "Distance": 328
+        }
       }
     },
     {
@@ -184,6 +432,37 @@
         "Mileage": 0.0,
         "Cleaning": 0.0,
         "Geometry": 0.0
+      },
+      "original_data": {
+        "Fitness": {
+          "Train id": 8,
+          "Days remaining ": 119
+        },
+        "Job card": {
+          "Train id": 8,
+          "Critical jobs": 0,
+          "Non critical jobs": 9
+        },
+        "Branding": {
+          "Train id": 8,
+          "Revenue": 33175,
+          "Remaining hours": 16,
+          "Penelty": 44607
+        },
+        "Mileage": {
+          "Train id": 8,
+          "Total KM": 9367,
+          "Daily Avg run": 131,
+          "Variance": -1799
+        },
+        "Cleaning": {
+          "Train id": 8,
+          "Last clean": 27
+        },
+        "Geometry": {
+          "Train id": 8,
+          "Distance": 177
+        }
       }
     },
     {
@@ -198,6 +477,37 @@
         "Mileage": 0.0,
         "Cleaning": 0.0,
         "Geometry": 0.0
+      },
+      "original_data": {
+        "Fitness": {
+          "Train id": 16,
+          "Days remaining ": 90
+        },
+        "Job card": {
+          "Train id": 16,
+          "Critical jobs": 4,
+          "Non critical jobs": 0
+        },
+        "Branding": {
+          "Train id": 16,
+          "Revenue": 91976,
+          "Remaining hours": 306,
+          "Penelty": 33011
+        },
+        "Mileage": {
+          "Train id": 16,
+          "Total KM": 20307,
+          "Daily Avg run": 216,
+          "Variance": -855
+        },
+        "Cleaning": {
+          "Train id": 16,
+          "Last clean": 18
+        },
+        "Geometry": {
+          "Train id": 16,
+          "Distance": 133
+        }
       }
     },
     {
@@ -212,6 +522,37 @@
         "Mileage": 0.0,
         "Cleaning": 0.0,
         "Geometry": 0.0
+      },
+      "original_data": {
+        "Fitness": {
+          "Train id": 13,
+          "Days remaining ": 287
+        },
+        "Job card": {
+          "Train id": 13,
+          "Critical jobs": 1,
+          "Non critical jobs": 8
+        },
+        "Branding": {
+          "Train id": 13,
+          "Revenue": 15274,
+          "Remaining hours": 427,
+          "Penelty": 31536
+        },
+        "Mileage": {
+          "Train id": 13,
+          "Total KM": 50612,
+          "Daily Avg run": 322,
+          "Variance": 158
+        },
+        "Cleaning": {
+          "Train id": 13,
+          "Last clean": 54
+        },
+        "Geometry": {
+          "Train id": 13,
+          "Distance": 112
+        }
       }
     },
     {
@@ -226,6 +567,37 @@
         "Mileage": 0.0,
         "Cleaning": 0.0,
         "Geometry": 0.0
+      },
+      "original_data": {
+        "Fitness": {
+          "Train id": 15,
+          "Days remaining ": 154
+        },
+        "Job card": {
+          "Train id": 15,
+          "Critical jobs": 2,
+          "Non critical jobs": 3
+        },
+        "Branding": {
+          "Train id": 15,
+          "Revenue": 45172,
+          "Remaining hours": 232,
+          "Penelty": 6649
+        },
+        "Mileage": {
+          "Train id": 15,
+          "Total KM": 52175,
+          "Daily Avg run": 106,
+          "Variance": -666
+        },
+        "Cleaning": {
+          "Train id": 15,
+          "Last clean": 42
+        },
+        "Geometry": {
+          "Train id": 15,
+          "Distance": 169
+        }
       }
     },
     {
@@ -240,6 +612,37 @@
         "Mileage": 0.0,
         "Cleaning": 0.0,
         "Geometry": 0.0
+      },
+      "original_data": {
+        "Fitness": {
+          "Train id": 14,
+          "Days remaining ": 87
+        },
+        "Job card": {
+          "Train id": 14,
+          "Critical jobs": 4,
+          "Non critical jobs": 1
+        },
+        "Branding": {
+          "Train id": 14,
+          "Revenue": 21946,
+          "Remaining hours": 422,
+          "Penelty": 33873
+        },
+        "Mileage": {
+          "Train id": 14,
+          "Total KM": 75497,
+          "Daily Avg run": 145,
+          "Variance": 1321
+        },
+        "Cleaning": {
+          "Train id": 14,
+          "Last clean": 0
+        },
+        "Geometry": {
+          "Train id": 14,
+          "Distance": 205
+        }
       }
     },
     {
@@ -254,6 +657,37 @@
         "Mileage": 0.0,
         "Cleaning": 0.0,
         "Geometry": 0.0
+      },
+      "original_data": {
+        "Fitness": {
+          "Train id": 18,
+          "Days remaining ": 39
+        },
+        "Job card": {
+          "Train id": 18,
+          "Critical jobs": 1,
+          "Non critical jobs": 5
+        },
+        "Branding": {
+          "Train id": 18,
+          "Revenue": 31018,
+          "Remaining hours": 434,
+          "Penelty": 34313
+        },
+        "Mileage": {
+          "Train id": 18,
+          "Total KM": 77943,
+          "Daily Avg run": 133,
+          "Variance": 1791
+        },
+        "Cleaning": {
+          "Train id": 18,
+          "Last clean": 45
+        },
+        "Geometry": {
+          "Train id": 18,
+          "Distance": 276
+        }
       }
     },
     {
@@ -268,6 +702,37 @@
         "Mileage": 0.0,
         "Cleaning": 0.0,
         "Geometry": 0.0
+      },
+      "original_data": {
+        "Fitness": {
+          "Train id": 11,
+          "Days remaining ": 32
+        },
+        "Job card": {
+          "Train id": 11,
+          "Critical jobs": 0,
+          "Non critical jobs": 5
+        },
+        "Branding": {
+          "Train id": 11,
+          "Revenue": 57162,
+          "Remaining hours": 362,
+          "Penelty": 17665
+        },
+        "Mileage": {
+          "Train id": 11,
+          "Total KM": 47200,
+          "Daily Avg run": 130,
+          "Variance": -1655
+        },
+        "Cleaning": {
+          "Train id": 11,
+          "Last clean": 44
+        },
+        "Geometry": {
+          "Train id": 11,
+          "Distance": 227
+        }
       }
     },
     {
@@ -282,6 +747,37 @@
         "Mileage": 0.0,
         "Cleaning": 0.0,
         "Geometry": 0.0
+      },
+      "original_data": {
+        "Fitness": {
+          "Train id": 25,
+          "Days remaining ": 255
+        },
+        "Job card": {
+          "Train id": 25,
+          "Critical jobs": 1,
+          "Non critical jobs": 5
+        },
+        "Branding": {
+          "Train id": 25,
+          "Revenue": 25831,
+          "Remaining hours": 458,
+          "Penelty": 7264
+        },
+        "Mileage": {
+          "Train id": 25,
+          "Total KM": 37355,
+          "Daily Avg run": 284,
+          "Variance": -1531
+        },
+        "Cleaning": {
+          "Train id": 25,
+          "Last clean": 22
+        },
+        "Geometry": {
+          "Train id": 25,
+          "Distance": 298
+        }
       }
     },
     {
@@ -476,6 +972,37 @@
         "Mileage": 0.0,
         "Cleaning": 0.0,
         "Geometry": 0.0
+      },
+      "original_data": {
+        "Fitness": {
+          "Train id": 17,
+          "Days remaining ": 256
+        },
+        "Job card": {
+          "Train id": 17,
+          "Critical jobs": 2,
+          "Non critical jobs": 1
+        },
+        "Branding": {
+          "Train id": 17,
+          "Revenue": 36573,
+          "Remaining hours": 374,
+          "Penelty": 19711
+        },
+        "Mileage": {
+          "Train id": 17,
+          "Total KM": 54392,
+          "Daily Avg run": 161,
+          "Variance": -369
+        },
+        "Cleaning": {
+          "Train id": 17,
+          "Last clean": 44
+        },
+        "Geometry": {
+          "Train id": 17,
+          "Distance": 364
+        }
       }
     },
     {
@@ -535,6 +1062,37 @@
         "Mileage": 0.0,
         "Cleaning": 0.0,
         "Geometry": 0.0
+      },
+      "original_data": {
+        "Fitness": {
+          "Train id": 12,
+          "Days remaining ": 302
+        },
+        "Job card": {
+          "Train id": 12,
+          "Critical jobs": 0,
+          "Non critical jobs": 1
+        },
+        "Branding": {
+          "Train id": 12,
+          "Revenue": 45718,
+          "Remaining hours": 318,
+          "Penelty": 43291
+        },
+        "Mileage": {
+          "Train id": 12,
+          "Total KM": 83033,
+          "Daily Avg run": 115,
+          "Variance": 1719
+        },
+        "Cleaning": {
+          "Train id": 12,
+          "Last clean": 6
+        },
+        "Geometry": {
+          "Train id": 12,
+          "Distance": 63
+        }
       }
     },
     {
@@ -549,6 +1107,37 @@
         "Mileage": 0.0,
         "Cleaning": 0.0,
         "Geometry": 0.0
+      },
+      "original_data": {
+        "Fitness": {
+          "Train id": 7,
+          "Days remaining ": 104
+        },
+        "Job card": {
+          "Train id": 7,
+          "Critical jobs": 1,
+          "Non critical jobs": 0
+        },
+        "Branding": {
+          "Train id": 7,
+          "Revenue": 11407,
+          "Remaining hours": 281,
+          "Penelty": 24977
+        },
+        "Mileage": {
+          "Train id": 7,
+          "Total KM": 9860,
+          "Daily Avg run": 246,
+          "Variance": 239
+        },
+        "Cleaning": {
+          "Train id": 7,
+          "Last clean": 45
+        },
+        "Geometry": {
+          "Train id": 7,
+          "Distance": 457
+        }
       }
     }
   ],
@@ -1180,6 +1769,37 @@
           "Mileage": 0.0,
           "Cleaning": 0.0,
           "Geometry": 0.0
+        },
+        "original_data": {
+          "Fitness": {
+            "Train id": 19,
+            "Days remaining ": 299
+          },
+          "Job card": {
+            "Train id": 19,
+            "Critical jobs": 4,
+            "Non critical jobs": 6
+          },
+          "Branding": {
+            "Train id": 19,
+            "Revenue": 90762,
+            "Remaining hours": 56,
+            "Penelty": 30873
+          },
+          "Mileage": {
+            "Train id": 19,
+            "Total KM": 44974,
+            "Daily Avg run": 166,
+            "Variance": -428
+          },
+          "Cleaning": {
+            "Train id": 19,
+            "Last clean": 46
+          },
+          "Geometry": {
+            "Train id": 19,
+            "Distance": 401
+          }
         }
       },
       {
@@ -1239,6 +1859,37 @@
           "Mileage": 0.0,
           "Cleaning": 0.0,
           "Geometry": 0.0
+        },
+        "original_data": {
+          "Fitness": {
+            "Train id": 22,
+            "Days remaining ": 216
+          },
+          "Job card": {
+            "Train id": 22,
+            "Critical jobs": 3,
+            "Non critical jobs": 7
+          },
+          "Branding": {
+            "Train id": 22,
+            "Revenue": 48957,
+            "Remaining hours": 422,
+            "Penelty": 39303
+          },
+          "Mileage": {
+            "Train id": 22,
+            "Total KM": 40133,
+            "Daily Avg run": 195,
+            "Variance": 1941
+          },
+          "Cleaning": {
+            "Train id": 22,
+            "Last clean": 45
+          },
+          "Geometry": {
+            "Train id": 22,
+            "Distance": 497
+          }
         }
       },
       {
@@ -1253,6 +1904,37 @@
           "Mileage": 0.0,
           "Cleaning": 0.0,
           "Geometry": 0.0
+        },
+        "original_data": {
+          "Fitness": {
+            "Train id": 21,
+            "Days remaining ": 228
+          },
+          "Job card": {
+            "Train id": 21,
+            "Critical jobs": 2,
+            "Non critical jobs": 5
+          },
+          "Branding": {
+            "Train id": 21,
+            "Revenue": 93322,
+            "Remaining hours": 404,
+            "Penelty": 27576
+          },
+          "Mileage": {
+            "Train id": 21,
+            "Total KM": 29907,
+            "Daily Avg run": 141,
+            "Variance": 31
+          },
+          "Cleaning": {
+            "Train id": 21,
+            "Last clean": 44
+          },
+          "Geometry": {
+            "Train id": 21,
+            "Distance": 147
+          }
         }
       },
       {
@@ -1267,6 +1949,37 @@
           "Mileage": 0.0,
           "Cleaning": 0.0,
           "Geometry": 0.0
+        },
+        "original_data": {
+          "Fitness": {
+            "Train id": 10,
+            "Days remaining ": 174
+          },
+          "Job card": {
+            "Train id": 10,
+            "Critical jobs": 1,
+            "Non critical jobs": 7
+          },
+          "Branding": {
+            "Train id": 10,
+            "Revenue": 70953,
+            "Remaining hours": 437,
+            "Penelty": 10049
+          },
+          "Mileage": {
+            "Train id": 10,
+            "Total KM": 98516,
+            "Daily Avg run": 276,
+            "Variance": 625
+          },
+          "Cleaning": {
+            "Train id": 10,
+            "Last clean": 35
+          },
+          "Geometry": {
+            "Train id": 10,
+            "Distance": 67
+          }
         }
       }
     ],
@@ -1283,6 +1996,37 @@
           "Mileage": 0.0,
           "Cleaning": 0.0,
           "Geometry": 0.0
+        },
+        "original_data": {
+          "Fitness": {
+            "Train id": 24,
+            "Days remaining ": 319
+          },
+          "Job card": {
+            "Train id": 24,
+            "Critical jobs": 3,
+            "Non critical jobs": 6
+          },
+          "Branding": {
+            "Train id": 24,
+            "Revenue": 28685,
+            "Remaining hours": 264,
+            "Penelty": 41944
+          },
+          "Mileage": {
+            "Train id": 24,
+            "Total KM": 39863,
+            "Daily Avg run": 269,
+            "Variance": 1908
+          },
+          "Cleaning": {
+            "Train id": 24,
+            "Last clean": 17
+          },
+          "Geometry": {
+            "Train id": 24,
+            "Distance": 146
+          }
         }
       },
       {
@@ -1297,6 +2041,37 @@
           "Mileage": 0.0,
           "Cleaning": 0.0,
           "Geometry": 0.0
+        },
+        "original_data": {
+          "Fitness": {
+            "Train id": 20,
+            "Days remaining ": 249
+          },
+          "Job card": {
+            "Train id": 20,
+            "Critical jobs": 4,
+            "Non critical jobs": 5
+          },
+          "Branding": {
+            "Train id": 20,
+            "Revenue": 14230,
+            "Remaining hours": 72,
+            "Penelty": 46983
+          },
+          "Mileage": {
+            "Train id": 20,
+            "Total KM": 91537,
+            "Daily Avg run": 380,
+            "Variance": 106
+          },
+          "Cleaning": {
+            "Train id": 20,
+            "Last clean": 43
+          },
+          "Geometry": {
+            "Train id": 20,
+            "Distance": 289
+          }
         }
       },
       {
@@ -1311,6 +2086,37 @@
           "Mileage": 0.0,
           "Cleaning": 0.0,
           "Geometry": 0.0
+        },
+        "original_data": {
+          "Fitness": {
+            "Train id": 23,
+            "Days remaining ": 264
+          },
+          "Job card": {
+            "Train id": 23,
+            "Critical jobs": 4,
+            "Non critical jobs": 3
+          },
+          "Branding": {
+            "Train id": 23,
+            "Revenue": 52461,
+            "Remaining hours": 322,
+            "Penelty": 38994
+          },
+          "Mileage": {
+            "Train id": 23,
+            "Total KM": 59450,
+            "Daily Avg run": 126,
+            "Variance": 1238
+          },
+          "Cleaning": {
+            "Train id": 23,
+            "Last clean": 45
+          },
+          "Geometry": {
+            "Train id": 23,
+            "Distance": 119
+          }
         }
       },
       {
@@ -1325,6 +2131,37 @@
           "Mileage": 0.0,
           "Cleaning": 0.0,
           "Geometry": 0.0
+        },
+        "original_data": {
+          "Fitness": {
+            "Train id": 9,
+            "Days remaining ": 331
+          },
+          "Job card": {
+            "Train id": 9,
+            "Critical jobs": 2,
+            "Non critical jobs": 4
+          },
+          "Branding": {
+            "Train id": 9,
+            "Revenue": 84277,
+            "Remaining hours": 250,
+            "Penelty": 9204
+          },
+          "Mileage": {
+            "Train id": 9,
+            "Total KM": 38512,
+            "Daily Avg run": 343,
+            "Variance": 1934
+          },
+          "Cleaning": {
+            "Train id": 9,
+            "Last clean": 52
+          },
+          "Geometry": {
+            "Train id": 9,
+            "Distance": 328
+          }
         }
       },
       {
@@ -1339,6 +2176,37 @@
           "Mileage": 0.0,
           "Cleaning": 0.0,
           "Geometry": 0.0
+        },
+        "original_data": {
+          "Fitness": {
+            "Train id": 8,
+            "Days remaining ": 119
+          },
+          "Job card": {
+            "Train id": 8,
+            "Critical jobs": 0,
+            "Non critical jobs": 9
+          },
+          "Branding": {
+            "Train id": 8,
+            "Revenue": 33175,
+            "Remaining hours": 16,
+            "Penelty": 44607
+          },
+          "Mileage": {
+            "Train id": 8,
+            "Total KM": 9367,
+            "Daily Avg run": 131,
+            "Variance": -1799
+          },
+          "Cleaning": {
+            "Train id": 8,
+            "Last clean": 27
+          },
+          "Geometry": {
+            "Train id": 8,
+            "Distance": 177
+          }
         }
       },
       {
@@ -1353,6 +2221,37 @@
           "Mileage": 0.0,
           "Cleaning": 0.0,
           "Geometry": 0.0
+        },
+        "original_data": {
+          "Fitness": {
+            "Train id": 16,
+            "Days remaining ": 90
+          },
+          "Job card": {
+            "Train id": 16,
+            "Critical jobs": 4,
+            "Non critical jobs": 0
+          },
+          "Branding": {
+            "Train id": 16,
+            "Revenue": 91976,
+            "Remaining hours": 306,
+            "Penelty": 33011
+          },
+          "Mileage": {
+            "Train id": 16,
+            "Total KM": 20307,
+            "Daily Avg run": 216,
+            "Variance": -855
+          },
+          "Cleaning": {
+            "Train id": 16,
+            "Last clean": 18
+          },
+          "Geometry": {
+            "Train id": 16,
+            "Distance": 133
+          }
         }
       },
       {
@@ -1367,6 +2266,37 @@
           "Mileage": 0.0,
           "Cleaning": 0.0,
           "Geometry": 0.0
+        },
+        "original_data": {
+          "Fitness": {
+            "Train id": 13,
+            "Days remaining ": 287
+          },
+          "Job card": {
+            "Train id": 13,
+            "Critical jobs": 1,
+            "Non critical jobs": 8
+          },
+          "Branding": {
+            "Train id": 13,
+            "Revenue": 15274,
+            "Remaining hours": 427,
+            "Penelty": 31536
+          },
+          "Mileage": {
+            "Train id": 13,
+            "Total KM": 50612,
+            "Daily Avg run": 322,
+            "Variance": 158
+          },
+          "Cleaning": {
+            "Train id": 13,
+            "Last clean": 54
+          },
+          "Geometry": {
+            "Train id": 13,
+            "Distance": 112
+          }
         }
       },
       {
@@ -1381,6 +2311,37 @@
           "Mileage": 0.0,
           "Cleaning": 0.0,
           "Geometry": 0.0
+        },
+        "original_data": {
+          "Fitness": {
+            "Train id": 15,
+            "Days remaining ": 154
+          },
+          "Job card": {
+            "Train id": 15,
+            "Critical jobs": 2,
+            "Non critical jobs": 3
+          },
+          "Branding": {
+            "Train id": 15,
+            "Revenue": 45172,
+            "Remaining hours": 232,
+            "Penelty": 6649
+          },
+          "Mileage": {
+            "Train id": 15,
+            "Total KM": 52175,
+            "Daily Avg run": 106,
+            "Variance": -666
+          },
+          "Cleaning": {
+            "Train id": 15,
+            "Last clean": 42
+          },
+          "Geometry": {
+            "Train id": 15,
+            "Distance": 169
+          }
         }
       },
       {
@@ -1395,6 +2356,37 @@
           "Mileage": 0.0,
           "Cleaning": 0.0,
           "Geometry": 0.0
+        },
+        "original_data": {
+          "Fitness": {
+            "Train id": 14,
+            "Days remaining ": 87
+          },
+          "Job card": {
+            "Train id": 14,
+            "Critical jobs": 4,
+            "Non critical jobs": 1
+          },
+          "Branding": {
+            "Train id": 14,
+            "Revenue": 21946,
+            "Remaining hours": 422,
+            "Penelty": 33873
+          },
+          "Mileage": {
+            "Train id": 14,
+            "Total KM": 75497,
+            "Daily Avg run": 145,
+            "Variance": 1321
+          },
+          "Cleaning": {
+            "Train id": 14,
+            "Last clean": 0
+          },
+          "Geometry": {
+            "Train id": 14,
+            "Distance": 205
+          }
         }
       },
       {
@@ -1409,6 +2401,37 @@
           "Mileage": 0.0,
           "Cleaning": 0.0,
           "Geometry": 0.0
+        },
+        "original_data": {
+          "Fitness": {
+            "Train id": 18,
+            "Days remaining ": 39
+          },
+          "Job card": {
+            "Train id": 18,
+            "Critical jobs": 1,
+            "Non critical jobs": 5
+          },
+          "Branding": {
+            "Train id": 18,
+            "Revenue": 31018,
+            "Remaining hours": 434,
+            "Penelty": 34313
+          },
+          "Mileage": {
+            "Train id": 18,
+            "Total KM": 77943,
+            "Daily Avg run": 133,
+            "Variance": 1791
+          },
+          "Cleaning": {
+            "Train id": 18,
+            "Last clean": 45
+          },
+          "Geometry": {
+            "Train id": 18,
+            "Distance": 276
+          }
         }
       }
     ],
@@ -1425,6 +2448,37 @@
           "Mileage": 0.0,
           "Cleaning": 0.0,
           "Geometry": 0.0
+        },
+        "original_data": {
+          "Fitness": {
+            "Train id": 11,
+            "Days remaining ": 32
+          },
+          "Job card": {
+            "Train id": 11,
+            "Critical jobs": 0,
+            "Non critical jobs": 5
+          },
+          "Branding": {
+            "Train id": 11,
+            "Revenue": 57162,
+            "Remaining hours": 362,
+            "Penelty": 17665
+          },
+          "Mileage": {
+            "Train id": 11,
+            "Total KM": 47200,
+            "Daily Avg run": 130,
+            "Variance": -1655
+          },
+          "Cleaning": {
+            "Train id": 11,
+            "Last clean": 44
+          },
+          "Geometry": {
+            "Train id": 11,
+            "Distance": 227
+          }
         }
       },
       {
@@ -1439,6 +2493,37 @@
           "Mileage": 0.0,
           "Cleaning": 0.0,
           "Geometry": 0.0
+        },
+        "original_data": {
+          "Fitness": {
+            "Train id": 25,
+            "Days remaining ": 255
+          },
+          "Job card": {
+            "Train id": 25,
+            "Critical jobs": 1,
+            "Non critical jobs": 5
+          },
+          "Branding": {
+            "Train id": 25,
+            "Revenue": 25831,
+            "Remaining hours": 458,
+            "Penelty": 7264
+          },
+          "Mileage": {
+            "Train id": 25,
+            "Total KM": 37355,
+            "Daily Avg run": 284,
+            "Variance": -1531
+          },
+          "Cleaning": {
+            "Train id": 25,
+            "Last clean": 22
+          },
+          "Geometry": {
+            "Train id": 25,
+            "Distance": 298
+          }
         }
       },
       {
@@ -1633,6 +2718,37 @@
           "Mileage": 0.0,
           "Cleaning": 0.0,
           "Geometry": 0.0
+        },
+        "original_data": {
+          "Fitness": {
+            "Train id": 17,
+            "Days remaining ": 256
+          },
+          "Job card": {
+            "Train id": 17,
+            "Critical jobs": 2,
+            "Non critical jobs": 1
+          },
+          "Branding": {
+            "Train id": 17,
+            "Revenue": 36573,
+            "Remaining hours": 374,
+            "Penelty": 19711
+          },
+          "Mileage": {
+            "Train id": 17,
+            "Total KM": 54392,
+            "Daily Avg run": 161,
+            "Variance": -369
+          },
+          "Cleaning": {
+            "Train id": 17,
+            "Last clean": 44
+          },
+          "Geometry": {
+            "Train id": 17,
+            "Distance": 364
+          }
         }
       },
       {
@@ -1692,6 +2808,37 @@
           "Mileage": 0.0,
           "Cleaning": 0.0,
           "Geometry": 0.0
+        },
+        "original_data": {
+          "Fitness": {
+            "Train id": 12,
+            "Days remaining ": 302
+          },
+          "Job card": {
+            "Train id": 12,
+            "Critical jobs": 0,
+            "Non critical jobs": 1
+          },
+          "Branding": {
+            "Train id": 12,
+            "Revenue": 45718,
+            "Remaining hours": 318,
+            "Penelty": 43291
+          },
+          "Mileage": {
+            "Train id": 12,
+            "Total KM": 83033,
+            "Daily Avg run": 115,
+            "Variance": 1719
+          },
+          "Cleaning": {
+            "Train id": 12,
+            "Last clean": 6
+          },
+          "Geometry": {
+            "Train id": 12,
+            "Distance": 63
+          }
         }
       },
       {
@@ -1706,6 +2853,37 @@
           "Mileage": 0.0,
           "Cleaning": 0.0,
           "Geometry": 0.0
+        },
+        "original_data": {
+          "Fitness": {
+            "Train id": 7,
+            "Days remaining ": 104
+          },
+          "Job card": {
+            "Train id": 7,
+            "Critical jobs": 1,
+            "Non critical jobs": 0
+          },
+          "Branding": {
+            "Train id": 7,
+            "Revenue": 11407,
+            "Remaining hours": 281,
+            "Penelty": 24977
+          },
+          "Mileage": {
+            "Train id": 7,
+            "Total KM": 9860,
+            "Daily Avg run": 246,
+            "Variance": 239
+          },
+          "Cleaning": {
+            "Train id": 7,
+            "Last clean": 45
+          },
+          "Geometry": {
+            "Train id": 7,
+            "Distance": 457
+          }
         }
       }
     ]
